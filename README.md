@@ -1,4 +1,4 @@
-Quadrigotion: Multiple Motor Drivers, one connector
+Quadrigotion: Multiple Motor Drivers, two connectors
 ============================================================
 
 Often it is useful to have all the motor drivers needed for a machine
