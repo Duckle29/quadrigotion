@@ -27,6 +27,8 @@ drivers, this could of course extend in the future.
 The Connector
 --------------
 
+##TO BE EDITED TO REFLECT USE OF SMOOTHIE GADGETEER PORTS
+
 The digital input is provided with an IDC connector with 16 pins (2x8) or
 20 pins (2x10).
 It features a SPI bus to send configuration data and also read motor/driver
@@ -84,7 +86,8 @@ You find the gerbers in the [fab/](./fab) directory. Board is also
 [shared on OshPark]. Cave: since this is the very first version, no
 testing has been done yet with a physical board.
 
-![](./img/tmc2660-quad-render.jpg)
+![](./img/tmc2660-quad-front.png)
+![](./img/tmc2660-quad-back.png)
 
 
 [BeagleG]: https://github.com/hzeller/beagleg
