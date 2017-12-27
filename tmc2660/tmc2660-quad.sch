@@ -118,37 +118,15 @@ F 3 "" H 4350 5650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Conn_02x08_Odd_Even J2
-U 1 1 5A1095ED
-P 2500 3450
-F 0 "J2" H 2550 2825 50  0000 C CNN
-F 1 "DataIn" H 2550 2916 50  0000 C CNN
-F 2 "Quadrigotion:IDC_Header_SMD_16pins" H 2500 3450 50  0001 C CNN
-F 3 "~" H 2500 3450 50  0001 C CNN
-	1    2500 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0116
 U 1 1 5A109C26
-P 2300 3150
-F 0 "#PWR0116" H 2300 2900 50  0001 C CNN
-F 1 "GND" V 2305 3022 50  0000 R CNN
-F 2 "" H 2300 3150 50  0001 C CNN
-F 3 "" H 2300 3150 50  0001 C CNN
-	1    2300 3150
-	0    1    1    0   
-$EndComp
-$Comp
-L power:VCC #PWR0115
-U 1 1 5A109EE9
-P 2800 3150
-F 0 "#PWR0115" H 2800 3000 50  0001 C CNN
-F 1 "VCC" V 2817 3278 50  0000 L CNN
-F 2 "" H 2800 3150 50  0001 C CNN
-F 3 "" H 2800 3150 50  0001 C CNN
-	1    2800 3150
-	0    1    1    0   
+P 1825 3875
+F 0 "#PWR0116" H 1825 3625 50  0001 C CNN
+F 1 "GND" V 1830 3747 50  0000 R CNN
+F 2 "" H 1825 3875 50  0001 C CNN
+F 3 "" H 1825 3875 50  0001 C CNN
+	1    1825 3875
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4250 1650 4350 1650
@@ -215,13 +193,13 @@ GLOBAL_MOSI
 Connection ~ 5850 1800
 Connection ~ 5650 2150
 Connection ~ 5500 2250
-Text GLabel 2300 3350 0    51   Output ~ 0
+Text GLabel 1775 3625 2    51   Output ~ 0
 CS
-Text GLabel 2800 3350 2    51   Output ~ 0
+Text GLabel 1275 3825 0    51   Output ~ 0
 SCLK
-Text GLabel 2800 3450 2    51   Output ~ 0
+Text GLabel 1275 3725 0    51   Output ~ 0
 GLOBAL_MOSI
-Text GLabel 2300 3450 0    51   Input ~ 0
+Text GLabel 1775 3725 2    51   Input ~ 0
 GLOBAL_MISO
 $Comp
 L Connector:Conn_01x04 J1
@@ -325,23 +303,23 @@ Wire Wire Line
 Text GLabel 3700 2700 0    51   Input ~ 0
 ~ENABLE
 Connection ~ 3850 2700
-Text GLabel 2300 3250 0    47   Input ~ 0
+Text GLabel 1275 3525 0    35   Input ~ 0
 ~ENABLE
-Text GLabel 2300 3550 0    51   Output ~ 0
+Text GLabel 1775 4675 2    51   Output ~ 0
 STEP1
-Text GLabel 2300 3650 0    51   Output ~ 0
+Text GLabel 1775 4475 2    51   Output ~ 0
 STEP2
-Text GLabel 2300 3750 0    51   Output ~ 0
+Text GLabel 1275 4575 0    51   Output ~ 0
 STEP3
-Text GLabel 2300 3850 0    51   Output ~ 0
+Text GLabel 1275 4775 0    51   Output ~ 0
 STEP4
-Text GLabel 2800 3550 2    51   Output ~ 0
+Text GLabel 1775 4575 2    51   Output ~ 0
 DIR1
-Text GLabel 2800 3650 2    51   Output ~ 0
+Text GLabel 1275 4475 0    51   Output ~ 0
 DIR2
-Text GLabel 2800 3750 2    51   Input ~ 0
+Text GLabel 1275 4675 0    51   Output ~ 0
 DIR3
-Text GLabel 2800 3850 2    51   Input ~ 0
+Text GLabel 1275 3625 0    51   Output ~ 0
 DIR4
 Wire Wire Line
 	5350 5950 5850 5950
@@ -447,7 +425,7 @@ Wire Wire Line
 Connection ~ 3775 2875
 Wire Wire Line
 	3775 2875 3775 2350
-Text GLabel 2800 3250 2    51   Input ~ 0
+Text GLabel 1775 3525 2    51   Input ~ 0
 STALL
 $Comp
 L diode:BAV70 D1
@@ -493,4 +471,105 @@ F 3 "" H 4150 3550 60  0001 C CNN
 	1    4150 3650
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:VCC #PWR0115
+U 1 1 5A109EE9
+P 700 2150
+F 0 "#PWR0115" H 700 2000 50  0001 C CNN
+F 1 "VCC" V 717 2278 50  0000 L CNN
+F 2 "" H 700 2150 50  0001 C CNN
+F 3 "" H 700 2150 50  0001 C CNN
+	1    700  2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR034
+U 1 1 5A443542
+P 900 2150
+F 0 "#PWR034" H 900 2000 50  0001 C CNN
+F 1 "+3V3" H 915 2323 50  0000 C CNN
+F 2 "" H 900 2150 50  0001 C CNN
+F 3 "" H 900 2150 50  0001 C CNN
+	1    900  2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  2150 700  2200
+Wire Wire Line
+	700  2200 900  2200
+Wire Wire Line
+	900  2200 900  2150
+$Comp
+L power:+3V3 #PWR035
+U 1 1 5A4458CC
+P 1200 4300
+F 0 "#PWR035" H 1200 4150 50  0001 C CNN
+F 1 "+3V3" H 1215 4473 50  0000 C CNN
+F 2 "" H 1200 4300 50  0001 C CNN
+F 3 "" H 1200 4300 50  0001 C CNN
+	1    1200 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR036
+U 1 1 5A4601C3
+P 1200 3350
+F 0 "#PWR036" H 1200 3200 50  0001 C CNN
+F 1 "+3V3" H 1215 3523 50  0000 C CNN
+F 2 "" H 1200 3350 50  0001 C CNN
+F 3 "" H 1200 3350 50  0001 C CNN
+	1    1200 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_02x05_Odd_Even J4
+U 1 1 5A47B1EE
+P 1475 4575
+F 0 "J4" H 1525 4992 50  0000 C CNN
+F 1 "Gadgeteer Y" H 1525 4901 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm_SMD" H 1475 4575 50  0001 C CNN
+F 3 "~" H 1475 4575 50  0001 C CNN
+	1    1475 4575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4300 1200 4375
+Wire Wire Line
+	1200 4375 1275 4375
+NoConn ~ 1775 4375
+$Comp
+L power:GND #PWR037
+U 1 1 5A48035C
+P 1825 4825
+F 0 "#PWR037" H 1825 4575 50  0001 C CNN
+F 1 "GND" V 1830 4697 50  0000 R CNN
+F 2 "" H 1825 4825 50  0001 C CNN
+F 3 "" H 1825 4825 50  0001 C CNN
+	1    1825 4825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1775 4775 1825 4775
+Wire Wire Line
+	1825 4775 1825 4825
+$Comp
+L Connector:Conn_02x05_Odd_Even J2
+U 1 1 5A441394
+P 1475 3625
+F 0 "J2" H 1525 4042 50  0000 C CNN
+F 1 "Gadgeteer S" H 1525 3951 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm_SMD" H 1475 3625 50  0001 C CNN
+F 3 "~" H 1475 3625 50  0001 C CNN
+	1    1475 3625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 3350 1200 3425
+Wire Wire Line
+	1200 3425 1275 3425
+NoConn ~ 1775 3425
+Wire Wire Line
+	1775 3825 1825 3825
+Wire Wire Line
+	1825 3825 1825 3875
 $EndSCHEMATC
